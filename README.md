@@ -3,7 +3,14 @@
 A lightweight, efficient Node.js library to fetch Daily Reflections from Alcoholics Anonymous (AA). This library provides both programmatic access through a JavaScript API and command-line interface.
 
 [![npm version](https://badge.fury.io/js/aa-daily-reflections.svg)](https://badge.fury.io/js/aa-daily-reflections)
-[![Node.js CI](https://github.com/yourusername/aa-daily-reflections/workflows/Node.js%20CI/badge.svg)](https://github.com/yourusername/aa-daily-reflections/actions)
+[![npm downloads](https://img.shields.io/npm/dm/aa-daily-reflections.svg)](https://www.npmjs.com/package/aa-daily-reflections)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js Version](https://img.shields.io/node/v/aa-daily-reflections.svg)](https://nodejs.org/)
+[![GitHub stars](https://img.shields.io/github/stars/paladini/aa-daily-reflections-api.svg?style=social&label=Star)](https://github.com/paladini/aa-daily-reflections-api)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/aa-daily-reflections.svg)](https://bundlephobia.com/package/aa-daily-reflections)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/paladini/aa-daily-reflections-api/graphs/commit-activity)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/paladini/aa-daily-reflections-api/pulls)
 
 ## ⚠️ Important Notice
 
@@ -173,7 +180,7 @@ Each module has focused responsibilities:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/aa-daily-reflections.git
+git clone https://github.com/paladini/aa-daily-reflections.git
 cd aa-daily-reflections
 
 # Install dependencies
