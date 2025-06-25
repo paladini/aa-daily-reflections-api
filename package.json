@@ -1,0 +1,111 @@
+{
+  "name": "aa-daily-reflections",
+  "version": "1.0.0",
+  "description": "A lightweight Node.js library to fetch Daily Reflections from Alcoholics Anonymous (AA)",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "aa-daily": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [
+    "aa",
+    "alcoholics-anonymous",
+    "daily-reflections",
+    "reflections",
+    "recovery",
+    "spirituality",
+    "reflexiones-diarias",
+    "alcohólicos-anónimos",
+    "recuperación",
+    "espiritualidad",
+    "réflexions-quotidiennes",
+    "alcooliques-anonymes",
+    "rétablissement",
+    "spiritualité",
+    "meditation",
+    "sobriety",
+    "sobriedad",
+    "sobriété"
+  ],
+  "author": {
+    "name": "Fernando Paladini",
+    "email": "fnpaladini@gmail.com",
+    "url": "https://github.com/paladini"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/paladini/aa-daily-reflections-api#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paladini/aa-daily-reflections-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paladini/aa-daily-reflections-api/issues",
+    "email": "fnpaladini@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/paladini"
+    },
+    {
+      "type": "patreon",
+      "url": "https://patreon.com/paladini"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Fernando Paladini",
+      "email": "fnpaladini@gmail.com",
+      "url": "https://github.com/paladini"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Fernando Paladini",
+      "email": "fnpaladini@gmail.com",
+      "url": "https://github.com/paladini"
+    }
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "devDependencies": {
+    "@types/he": "^1.2.3",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.19.1",
+    "@types/node-fetch": "^2.6.12",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "he": "^1.2.0"
+  },
+  "files": [
+    "lib/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ]
+}
