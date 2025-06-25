@@ -10,10 +10,12 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
+    "declarationMap": false,
+    "sourceMap": false,
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "importHelpers": false
   },
   "include": [
     "src/**/*"
@@ -21,6 +23,9 @@
   "exclude": [
     "node_modules",
     "lib",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    "**/__tests__/**/*",
+    "src/test-setup.ts",
+    "src/integration.test.ts"
   ]
 }
