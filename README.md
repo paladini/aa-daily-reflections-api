@@ -178,6 +178,8 @@ Each module has focused responsibilities:
 
 ## 🔧 Development
 
+> **Note**: Development requires Node.js 18.18.0 or later. The library itself still supports Node.js 16+ for consumers.
+
 ```bash
 # Clone the repository
 git clone https://github.com/paladini/aa-daily-reflections.git
