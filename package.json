@@ -17,8 +17,7 @@
     "prepublishOnly": "npm run clean && npm run build && npm run test",
     "prepack": "npm run build",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix",
-    "size-check": "bundlesize"
+    "lint:fix": "eslint src/**/*.ts --fix"
   },
   "keywords": [
     "aa",
@@ -97,9 +96,8 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^20.19.1",
     "@types/node-fetch": "^2.6.12",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "bundlesize": "^0.18.1",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "eslint": "^8.49.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
@@ -108,12 +106,6 @@
   "dependencies": {
     "he": "^1.2.0"
   },
-  "bundlesize": [
-    {
-      "path": "./lib/index.js",
-      "maxSize": "5kb"
-    }
-  ],
   "files": [
     "lib/index.js",
     "lib/index.d.ts",

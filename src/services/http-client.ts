@@ -11,7 +11,7 @@ export class HttpClient {
     }
     
     try {
-      const { default: fetch } = await import('node-fetch') as any;
+      const { default: fetch } = await import('node-fetch') as unknown as { default: typeof globalThis.fetch };
       return fetch;
     } catch {
       throw new Error('Fetch is not available. Please upgrade to Node.js 18+ or install node-fetch');
