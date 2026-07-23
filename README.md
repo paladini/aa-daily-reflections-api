@@ -1,4 +1,4 @@
-﻿# AA Daily Reflections
+# AA Daily Reflections
 
 <img alt="Harness Score L0" src="https://paladini.github.io/harness-score/maturity/badge-l0.svg" height="20">
 A lightweight, efficient Node.js library to fetch Daily Reflections from Alcoholics Anonymous (AA). This library provides both programmatic access through a JavaScript API and command-line interface.
@@ -13,7 +13,7 @@ A lightweight, efficient Node.js library to fetch Daily Reflections from Alcohol
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/paladini/aa-daily-reflections-api/graphs/commit-activity)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/paladini/aa-daily-reflections-api/pulls)
 
-## âš ï¸ Important Notice
+## ÔÜá´©Å Important Notice
 
 This library fetches content from the public [AA.org](https://aa.org) API. Please use it responsibly and consider the following:
 
@@ -22,13 +22,13 @@ This library fetches content from the public [AA.org](https://aa.org) API. Pleas
 - **Educational use**: This library is intended for personal, educational, and recovery support purposes
 - **No warranty**: This is an unofficial library and comes with no guarantees
 
-## ðŸš€ Installation
+## ­ƒÜÇ Installation
 
 ```bash
 npm install aa-daily-reflections
 ```
 
-## ðŸ“– Usage
+## ­ƒôû Usage
 
 ### JavaScript/TypeScript API
 
@@ -87,13 +87,13 @@ aa-daily -d 12/24 -l fr
 aa-daily --help
 ```
 
-## ðŸŒ Supported Languages
+## ­ƒîì Supported Languages
 
 - **English** (`en`) - Default
-- **Spanish** (`es`) - EspaÃ±ol
-- **French** (`fr`) - FranÃ§ais
+- **Spanish** (`es`) - Espa├▒ol
+- **French** (`fr`) - Fran├ºais
 
-## ðŸ“‹ API Reference
+## ­ƒôï API Reference
 
 ### Class: DailyReflections
 
@@ -142,33 +142,33 @@ interface DailyReflection {
 }
 ```
 
-## ðŸ› ï¸ Node.js Compatibility
+## ­ƒøá´©Å Node.js Compatibility
 
 This library supports:
 
-- âœ… Node.js 22.x
-- âœ… Node.js 20.x
-- âœ… Node.js 18.x
-- âœ… Node.js 16.x
+- Ô£à Node.js 22.x
+- Ô£à Node.js 20.x
+- Ô£à Node.js 18.x
+- Ô£à Node.js 16.x
 
 **Note**: Node.js 18+ has built-in fetch. For Node.js 16, the library will attempt to use `node-fetch` if available, or provide clear error messages if not.
 
-## ðŸ—ï¸ Architecture
+## ­ƒÅù´©Å Architecture
 
 The library is structured for maintainability and clean separation of concerns:
 
 ```
 src/
-â”œâ”€â”€ index.ts              # Main DailyReflections class
-â”œâ”€â”€ types.ts              # TypeScript interfaces
-â”œâ”€â”€ utils/                # Utility functions
-â”‚   â”œâ”€â”€ date.ts          # Date validation & helpers
-â”‚   â”œâ”€â”€ text.ts          # Text cleaning utilities
-â”‚   â””â”€â”€ url.ts           # URL building
-â”œâ”€â”€ services/             # External services
-â”‚   â””â”€â”€ http-client.ts   # HTTP request handling
-â””â”€â”€ parsers/              # HTML parsing
-    â””â”€â”€ reflection-parser.ts
+Ôö£ÔöÇÔöÇ index.ts              # Main DailyReflections class
+Ôö£ÔöÇÔöÇ types.ts              # TypeScript interfaces
+Ôö£ÔöÇÔöÇ utils/                # Utility functions
+Ôöé   Ôö£ÔöÇÔöÇ date.ts          # Date validation & helpers
+Ôöé   Ôö£ÔöÇÔöÇ text.ts          # Text cleaning utilities
+Ôöé   ÔööÔöÇÔöÇ url.ts           # URL building
+Ôö£ÔöÇÔöÇ services/             # External services
+Ôöé   ÔööÔöÇÔöÇ http-client.ts   # HTTP request handling
+ÔööÔöÇÔöÇ parsers/              # HTML parsing
+    ÔööÔöÇÔöÇ reflection-parser.ts
 ```
 
 Each module has focused responsibilities:
@@ -177,7 +177,7 @@ Each module has focused responsibilities:
 - **Parsers**: Transform API responses into clean data
 - **Main class**: Orchestrates everything together
 
-## ðŸ”§ Development
+## ­ƒöº Development
 
 ```bash
 # Clone the repository
@@ -197,7 +197,7 @@ npm run lint
 npm run lint:fix
 ```
 
-## ðŸ“ Examples
+## ­ƒôØ Examples
 
 ### Basic Usage
 
@@ -210,11 +210,11 @@ async function example() {
   try {
     const reflection = await reflections.getToday();
     
-    console.log(`ðŸ“… ${reflection.monthName} ${reflection.day}`);
-    console.log(`ðŸŽ¯ ${reflection.title}`);
-    console.log(`ðŸ’¬ "${reflection.quote}"`);
-    console.log(`ðŸ“– ${reflection.reference}`);
-    console.log(`ðŸ“ ${reflection.reflection}`);
+    console.log(`­ƒôà ${reflection.monthName} ${reflection.day}`);
+    console.log(`­ƒÄ» ${reflection.title}`);
+    console.log(`­ƒÆ¼ "${reflection.quote}"`);
+    console.log(`­ƒôû ${reflection.reference}`);
+    console.log(`­ƒôØ ${reflection.reflection}`);
   } catch (error) {
     console.error('Error fetching reflection:', error.message);
   }
@@ -263,11 +263,11 @@ async function multiLanguageExample() {
 }
 ```
 
-## ðŸ“œ License
+## ­ƒô£ License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## ðŸ¤ Contributing
+## ­ƒñØ Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -277,11 +277,11 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## âš ï¸ Disclaimer
+## ÔÜá´©Å Disclaimer
 
 This is an unofficial library. The Daily Reflections content is copyrighted by Alcoholics Anonymous World Services, Inc. This library simply provides a convenient interface to access publicly available content. Please respect their terms of service and use this tool responsibly.
 
-## ðŸ™ Acknowledgments
+## ­ƒÖÅ Acknowledgments
 
 - Alcoholics Anonymous World Services, Inc. for providing the Daily Reflections
 - The AA community for their ongoing support and recovery resources
@@ -289,4 +289,4 @@ This is an unofficial library. The Daily Reflections content is copyrighted by A
 
 ---
 
-**Remember**: Recovery is a journey, and daily reflection is a powerful tool in that journey. Use this library to support your spiritual practice and growth. ðŸ™
+**Remember**: Recovery is a journey, and daily reflection is a powerful tool in that journey. Use this library to support your spiritual practice and growth. ­ƒÖÅ
