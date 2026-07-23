@@ -1,0 +1,61 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+  # GH Packages only — does not publish to npmjs.
+  workflow_dispatch:
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  github-packages:
+    name: Publish to GitHub Packages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com
+          scope: "@paladini"
+
+      - name: Read package metadata
+        id: package
+        shell: bash
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          {
+            echo "version=$version"
+            if [[ "$version" == *-* ]]; then echo "dist_tag=next"; else echo "dist_tag=latest"; fi
+          } >> "$GITHUB_OUTPUT"
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+      - name: Check GitHub Packages version
+        id: ghp
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          if npm view "@paladini/aa-daily-reflections@${{ steps.package.outputs.version }}" version --registry=https://npm.pkg.github.com >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to GitHub Packages as @paladini/aa-daily-reflections
+        if: steps.ghp.outputs.published == 'false'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm pkg set name=@paladini/aa-daily-reflections
+          npm publish --access public --tag "${{ steps.package.outputs.dist_tag }}"
