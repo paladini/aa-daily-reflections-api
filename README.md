@@ -4,6 +4,7 @@
 A lightweight, efficient Node.js library to fetch Daily Reflections from Alcoholics Anonymous (AA). This library provides both programmatic access through a JavaScript API and command-line interface.
 
 [![npm version](https://badge.fury.io/js/aa-daily-reflections.svg)](https://badge.fury.io/js/aa-daily-reflections)
+[![JSR](https://jsr.io/badges/@paladini/aa-daily-reflections)](https://jsr.io/@paladini/aa-daily-reflections)
 [![npm downloads](https://img.shields.io/npm/dm/aa-daily-reflections.svg)](https://www.npmjs.com/package/aa-daily-reflections)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
@@ -24,8 +25,20 @@ This library fetches content from the public [AA.org](https://aa.org) API. Pleas
 
 ## 🚀 Installation
 
+**npm:**
+
 ```bash
 npm install aa-daily-reflections
+```
+
+**JSR** (TypeScript source; Deno, Bun, or Node via `jsr:` — npm package remains CommonJS):
+
+```bash
+npx jsr add @paladini/aa-daily-reflections
+```
+
+```ts
+import { DailyReflections } from '@paladini/aa-daily-reflections';
 ```
 
 ## 📖 Usage

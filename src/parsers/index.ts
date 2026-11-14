@@ -1,1 +1,1 @@
-export { ReflectionParser } from './reflection-parser';
+export { ReflectionParser } from './reflection-parser.js';

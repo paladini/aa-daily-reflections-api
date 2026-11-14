@@ -1,8 +1,8 @@
-import { DailyReflection, Language } from './types';
-import { validateDate, getCurrentDate } from './utils/date';
-import { buildApiUrl } from './utils/url';
-import { HttpClient } from './services/http-client';
-import { ReflectionParser } from './parsers/reflection-parser';
+import { DailyReflection, Language } from './types.js';
+import { validateDate, getCurrentDate } from './utils/date.js';
+import { buildApiUrl } from './utils/url.js';
+import { HttpClient } from './services/http-client.js';
+import { ReflectionParser } from './parsers/reflection-parser.js';
 
 export class DailyReflections {
   private language: Language;
@@ -57,7 +57,7 @@ export class DailyReflections {
 }
 
 // Export types for external use
-export { DailyReflection, Language } from './types';
+export { DailyReflection, Language } from './types.js';
 
 // Default export for easy importing
 export default DailyReflections;
