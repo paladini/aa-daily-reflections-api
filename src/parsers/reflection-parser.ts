@@ -1,6 +1,6 @@
 import { decode } from 'he';
-import { DailyReflection, ApiResponse } from '../types';
-import { cleanText } from '../utils/text';
+import { DailyReflection, ApiResponse } from '../types.js';
+import { cleanText } from '../utils/text.js';
 
 /**
  * Parses API response and extracts reflection data

@@ -1,4 +1,4 @@
-import { ApiResponse } from '../types';
+import { ApiResponse } from '../types.js';
 
 /**
  * Handles HTTP requests with proper error handling

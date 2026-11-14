@@ -1,5 +1,5 @@
-import { Language } from '../types';
-import { padNumber } from '../utils/date';
+import { Language } from '../types.js';
+import { padNumber } from './date.js';
 
 /**
  * Builds the API URL for a specific date and language

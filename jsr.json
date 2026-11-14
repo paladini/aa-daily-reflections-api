@@ -1,6 +1,7 @@
 {
   "name": "@paladini/aa-daily-reflections",
   "version": "1.0.1",
+  "description": "A lightweight Node.js library to fetch Daily Reflections from Alcoholics Anonymous (AA)",
   "license": "MIT",
   "exports": {
     ".": "./src/index.ts"
